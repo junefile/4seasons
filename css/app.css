@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&family=Noto+Sans:wght@500;700&family=Quicksand:wght@500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  background-color: #f6f5f5;
+  padding-bottom: 3000px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: bolder;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #e19097;
+  color: white;
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content {
+  flex: 1.5;
+  order: 1;
+  margin: 25px;
+}
+
+.banner {
+  flex: 2;
+  order: 2;
+  align-items: right;
+}
+
+.content h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+#shop {
+  background-color: #e19097;
+  width: 200px;
+  height: 30px;
+  font-weight: bolder;
+  border-radius: 999px;
+}
+
+#shop:hover {
+  color: white;
+  background-color: black;
+  border-radius: 999px;
+}
+
+h1 {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.new {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.article-aside {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.information {
+  flex: 2;
+  align-items: left;
+  margin: 20px 30px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: justify;
+  border-right: 5px solid #dfe6e3;
+}
+
+.profile {
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.name {
+  font-size: 20px;
+  margin: 20px auto;
+}
+
+.review {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.review p {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.review img:hover {
+  transform: scale(1.1);
+}
+
+.back {
+  max-width: 1200px;
+  background-color: #eeaaa9;
+  text-align: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.back a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.back:hover {
+  background-color: #f3c1c0;
+}
+
+footer {
+  max-width: 1200px;
+  background-color: #e19097;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #3f3d3d;
+}
+
+footer h3 {
+  font-size: 25px;
+  color: black;
+}
+
+.keterangan {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deskripsi {
+  text-align: left;
+  flex: 1;
+}
+
+.deskripsi p {
+  margin: 0 20px 0 0;
+}
+
+.sosmed {
+  margin: 20px auto;
+}
+
+.sosmed a {
+  color: #3f3d3d;
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+.sosmed a:hover {
+  color: white;
+}
+
+.help {
+  text-align: left;
+  margin: 0 30px 0 0;
+}
+
+.help ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 200px;
+}
+
+.help a {
+  text-decoration: none;
+  display: inline-block;
+  color: #3f3d3d;
+}
+
+.help a:hover {
+  text-decoration: underline;
+}
+
+.subcribe {
+  flex: 1;
+  text-align: left;
+}
+
+.subcribe p {
+  margin: 10px;
+}
+
+#email {
+  margin: 0 0 0 10px;
+  height: 30px;
+}
+
+.subcribe button {
+  height: 30px;
+}
+
+.regis {
+  font-style: italic;
+  font-size: 15px;
+}
+.tugas {
+  border-top: 1px solid #3f3d3d;
+  color: #3f3d3d;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  .banner-content {
+    margin-top: 0px;
+  }
+
+  .banner {
+    order: -1;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .content {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+
+  .article-aside {
+    box-shadow: none;
+    border: none;
+  }
+
+  .information {
+    border: none;
+    border-bottom: 2px solid #dfe6e3;
+  }
+  .information h3 {
+    text-align: center;
+  }
+  .profile {
+    text-align: center;
+  }
+  .review {
+    flex-wrap: wrap;
+  }
+
+  .review p {
+    width: 300px;
+  }
+}
+
+.offer{
+  font-size: large;
+  text-align: center;
+  font-weight: 700;
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+#blinking-text {
+  animation: blink 1s infinite;
+}
